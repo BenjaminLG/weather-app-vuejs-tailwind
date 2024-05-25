@@ -1,4 +1,9 @@
+<script setup>
 
+import SearchInput from './components/SearchInput.vue'
+
+
+</script>
 
 <template>
   <main>
@@ -10,6 +15,10 @@
       month: 'long',
       day: 'numeric',
     }) }}
+    </article>
+    <!-- Search -->
+    <article>
+      <searchInput/>
     </article>
   </main>
 </template>
