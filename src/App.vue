@@ -28,8 +28,10 @@ const addPlace = (data) => {
     </article>
 
     <!-- Weather cards -->
-    <article v-for="(place, index) in places" :key="index">
-      <WeatherCard :place="place"/>
+    <article class="grid grid-cols-2 gap-4">
+      <div v-for="(place, index) in places" :key="index">
+        <WeatherCard :place="place"/>
+      </div>
     </article>
   </main>
 </template>
