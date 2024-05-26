@@ -23,8 +23,11 @@ const handleSearch = () => {
   }, 500)  
 };
 
-const getWeather = (id) => {
-  console.log(id);
+const getWeather = async (id) => {
+  const res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=0c10700cabb24719b6b200201242505&q=id:${id}&days=3&aqi=no&alerts=no`);
+  const data = await res.json();
+
+  console.log(data);
 }
 
 
