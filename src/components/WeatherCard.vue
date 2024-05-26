@@ -1,5 +1,7 @@
 <script setup>
 
+import BorderLine from './BorderLine.vue'
+
 defineProps({
   place: Object
 })
